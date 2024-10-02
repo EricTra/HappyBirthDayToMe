@@ -8,6 +8,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(135deg, #f5f7fa 25%, #c3cfe2 100%); /* Gradient nền */
 }
 
 .card-container {
@@ -20,19 +21,22 @@ body, html {
 
 .birthday-card {
   width: 400px;
-  height: 300px;
+  height: 320px; /* Tăng chiều cao cho đẹp hơn */
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.6s;
+  transition: transform 0.6s, box-shadow 0.3s ease; /* Thêm hiệu ứng hộp sáng */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('https://www.transparenttextures.com/patterns/debut-light.png');
-  border-radius: 15px;
+  background-color: #fffbf2;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid #ff6f61; /* Thêm viền */
 }
 
 .birthday-card:hover {
   transform: rotateY(180deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Hiệu ứng khi hover */
 }
 
 .card-front, .card-back {
@@ -43,23 +47,24 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffcc00;
-  border-radius: 10px;
+  background-color: #fff3e0; /* Nền màu nhạt */
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
   text-align: center;
   color: #333;
+  flex-direction: column;
 }
 
 .card-front {
   background-color: #ff6f61;
   font-size: 1.5em;
+  color: white;
 }
 
 .card-back {
   transform: rotateY(180deg);
-  background-color: #ffe5b4;
-  flex-direction: column;
+  background-color: #fff8dc; /* Nền nhạt cho phần sau */
   font-size: 1.2em;
 }
 
@@ -68,14 +73,27 @@ body, html {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #333;
+  border: 4px solid #ff6f61; /* Khung ảnh avatar */
   margin-bottom: 20px;
 }
 
 .card-back p {
-  margin: 10px 0;
+  margin: 5px 0;
+  line-height: 1.4;
+  font-size: 1.1em;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  color: #ff6f61; /* Màu tiêu đề */
 }
 
 .avatar-container {
   margin-bottom: 15px;
 }
+
+.card-back p:last-of-type {
+  margin-bottom: 0;
+}
+
