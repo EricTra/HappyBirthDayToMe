@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Customization
-  const friendName = "Tra Quang Duy"; 
-  const avatarUrl = "image/Danbo.jpg"; 
-  const eventLocation = "134 Phan Châu Trinh, Đà Nẵng";
+  const friendName = "Trà Quang Duy"; // Tên người mời
+  const avatarUrl = "image/Danbo.jpg"; // Đường dẫn avatar
+  const eventLocation = "Quán Buffet 3BIG, Đà Nẵng";
   const eventTime = "7:30 PM, ngày 04/10/2024";
 
   document.getElementById('friend-name').textContent = friendName;
