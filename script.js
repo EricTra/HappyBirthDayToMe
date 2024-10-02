@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Customization
-  const friendName = "Trà Quang Duy";
-  const avatarUrl = "image/Danbo.jpg";
+  const friendName = "Nguyễn Anh Tuấn";
+  const avatarUrl = "image/A_Tuan.jpg";
   const eventLocation = "Quán Buffet 3BIG, Đà Nẵng";
   const eventTime = "7:30 PM, 04/10/2024";
 
