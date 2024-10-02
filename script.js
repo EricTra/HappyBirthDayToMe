@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
   const card = document.getElementById('card');
-  
-  // Thêm sự kiện click để lật thiệp
+  const music = document.getElementById('background-music');
+
+  // Thêm sự kiện click để lật thiệp và phát nhạc
   card.addEventListener('click', function() {
     card.classList.toggle('open');
+
+    // Kiểm tra nếu nhạc chưa phát, bắt đầu phát nhạc
+    if (music.paused) {
+      music.play();
+    }
   });
 
   // Customization
