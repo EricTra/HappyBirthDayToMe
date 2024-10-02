@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp Mời Sinh Nhật</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="birthday-card" id="card">
+      <div class="card-front">
+        <h2>Nhấp vào đây để mở thiệp mời!</h2>
+      </div>
+      <div class="card-back">
+        <h2>Mời bạn: <span id="friend-name"></span></h2>
+        <img id="friend-avatar" src="" alt="Avatar">
+        <p>Địa điểm: <span id="event-location"></span></p>
+        <p>Thời gian: <span id="event-time"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <audio id="background-music" src="your-music-link.mp3" autoplay loop></audio>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
