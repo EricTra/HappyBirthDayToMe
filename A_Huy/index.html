@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp Mời Sinh Nhật Duy Tea</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="card-container">
+    <div class="birthday-card" id="card">
+      <div class="card-front" style="background-color: #ff6f61;">
+        <h2 style="color: white !important;">Nhấp vào để mở thiệp😘</h2>
+      </div>
+      <div class="card-back">
+        <h2>Mời bạn: <span id="friend-name"></span></h2>
+        <div class="avatar-container">
+          <img id="friend-avatar" src="" alt="Avatar">
+        </div>
+        <p><span class="bold-text">Địa điểm:</span> <span id="event-location"></span></p>
+        <p><span class="bold-text">Thời gian:</span> <span id="event-time"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <audio id="background-music" src="Audio/TWERL x Ekko .mp3" loop></audio>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
