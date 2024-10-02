@@ -2,12 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const card = document.getElementById('card');
   const music = document.getElementById('background-music');
 
+  // Đặt thời gian phát nhạc bắt đầu từ giây thứ 30
+  const startTime = 0; // Thay đổi số giây tại đây
+
   // Thêm sự kiện click để lật thiệp và phát nhạc
   card.addEventListener('click', function() {
     card.classList.toggle('open');
 
-    // Kiểm tra nếu nhạc chưa phát, bắt đầu phát nhạc
+    // Kiểm tra nếu nhạc chưa phát, bắt đầu phát nhạc từ giây thứ `startTime`
     if (music.paused) {
+      music.currentTime = startTime; // Đặt thời gian bắt đầu
       music.play();
     }
   });
@@ -16,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const friendName = "Trà Quang Duy";
   const avatarUrl = "image/Danbo.jpg";
   const eventLocation = "Quán Buffet 3BIG, Đà Nẵng";
-  const eventTime = "7:30 PM, ngày 04/10/2024";
+  const eventTime = "7:30 PM, 04/10/2024";
 
   document.getElementById('friend-name').textContent = friendName;
   document.getElementById('friend-avatar').src = avatarUrl;

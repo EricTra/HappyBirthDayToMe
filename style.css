@@ -82,6 +82,9 @@ body, html {
   line-height: 1.4;
   font-size: 1.1em;
 }
+.bold-text {
+  font-weight: bold;
+}
 
 h2 {
   margin-bottom: 15px;
