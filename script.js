@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const card = document.getElementById('card');
+  
+  // Thêm sự kiện click để lật thiệp
+  card.addEventListener('click', function() {
+    card.classList.toggle('open');
+  });
+
   // Customization
-  const friendName = "Trà Quang Duy"; // Tên người mời
-  const avatarUrl = "image/Danbo.jpg"; // Đường dẫn avatar
+  const friendName = "Trà Quang Duy";
+  const avatarUrl = "image/Danbo.jpg";
   const eventLocation = "Quán Buffet 3BIG, Đà Nẵng";
   const eventTime = "7:30 PM, ngày 04/10/2024";
 
