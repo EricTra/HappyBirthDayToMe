@@ -1,9 +1,9 @@
+/* Font và màu sắc chung cho toàn bộ văn bản */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #f0f0f0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Noto Serif', serif; /* Font Noto Serif hỗ trợ tiếng Việt tốt */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -16,26 +16,26 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  perspective: 2000px; /* Tăng chiều sâu cho hiệu ứng */
+  perspective: 2000px;
 }
 
 .birthday-card {
-  width: 400px;
-  height: 320px;
+  width: 500px;
+  height: 400px;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 1s ease-out; /* Chuyển động mượt mà hơn */
+  transition: transform 1s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fffbf2;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border: 3px solid #ff6f61;
+  border: 3px solid #b85c38;
 }
 
 .birthday-card.open {
-  transform: rotateY(180deg); /* Chỉ cần xoay trục Y */
+  transform: rotateY(180deg);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -43,7 +43,7 @@ body, html {
   width: 100%;
   height: 100%;
   position: absolute;
-  backface-visibility: hidden; /* Ẩn mặt sau khi lật */
+  backface-visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,45 +58,65 @@ body, html {
 
 .card-front {
   background-color: #ff6f61;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: white;
 }
 
 .card-back {
-  transform: rotateY(180deg); /* Xoay mặt sau theo trục Y */
+  transform: rotateY(180deg);
   background-color: #fff8dc;
-  font-size: 1.2em;
 }
 
 #friend-avatar {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  border: 4px solid #ff6f61;
+  border: 4px solid #b85c38;
   margin-bottom: 20px;
 }
 
 .card-back p {
   margin: 5px 0;
   line-height: 1.4;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
+
 .bold-text {
   font-weight: bold;
+  color: #b85c38;
 }
 
-h2 {
-  margin-bottom: 15px;
+/* Cập nhật màu riêng cho tiêu đề */
+.card-title {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8em;
+  color: #8B0000 !important; /* Màu đỏ đậm và thêm !important */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* Cập nhật màu cho phần tên người mời */
+.card-back h2 {
+  font-family: 'Noto Serif', serif;
+  color: #b85c38; /* Màu cho tên mời khớp với địa điểm */
   font-size: 1.6em;
-  color: #ff6f61;
+  margin-bottom: 10px;
+  text-align: center;
 }
-
-.avatar-container {
-  margin-bottom: 15px;
-}
-
-.card-back p:last-of-type {
-  margin-bottom: 0;
+/* Tăng độ ưu tiên bằng cách sử dụng class .special-title */
+.special-title {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8em;
+  color: #8B0000; /* Màu khác cho tiêu đề - đỏ đậm */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
